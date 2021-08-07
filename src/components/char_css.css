@@ -1,0 +1,19 @@
+li {
+    list-style-type: none;
+  }
+  
+  .label {
+    margin-left: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #666666;
+    font-size: 14px;
+  }
+  
+  .legendValue {
+    float: left;
+    height: 25px;  
+  }
+  
+  .clear {
+    clear: both
+  }

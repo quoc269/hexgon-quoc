@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ /* #giao-dien{
+  padding: 50px;  
+  margin: 50px;
+  background-color:#DBDFE1;
+} */
+#giao-dien-con{  
+  background-color:#FFFFFF;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ 
+#btn-search{
+  border: none;
+  width: 18px; 
+  height: auto;
+  padding: 10px;    
+  background:url(/src/icon_date_range.svg) 0 0 no-repeat;
+  margin-top: 5px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+ #searchword{
+  border: none;
+  background:white;
+  box-shadow: 0 0 0;
+  /* padding: -20px ; */
+} 
+#date-picker{
+  display: block;
+  width: 250px;
+  height: 40px;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+  padding: 4px 11px 6px;
+  box-sizing: border-box; 
+  margin: 0px 10px;
+}
+#select-quy{
+  display: block;
+  width: 250px;
+  height: 40px;
+ /*  border: 1px solid #d5d5d5; */
+  border-radius: 5px;  
+  box-sizing: border-box; 
+  margin: 0px 10px;
+}
+#sel-form{
+  display: block;
+  width: 250px;
+  height: 40px;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+}
+  #btn-tra-cuu{
+  display: block;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+  padding: 4px 11px 6px;
+  box-sizing: border-box; 
+  margin: 0px 10px;
+  background-color:#E87722 ;
   color: white;
+}  
+
+@media (max-width: 768px) {
+  #btn-tra-cuu, #select-quy, #date-picker, #sel-form{
+      width:100%;      
+  } 
+  .col-sm-3 {
+    padding: 5px;
+  }
+  #xem-them-desktop{
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+ 
+  #xem-them-mobile{
+    display: none;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+
+/*legend mobile */
+@media (max-width: 768px) {
+  #bieu-do {
+    display:flex;
+    flex-flow: column;
+      
+  } 
+  #legend{
+    order:2;   
+  }
+  #do-thi{
+    order:1;
+  }
+}
+.chu-mau-cam{
+  color: #E87722;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* #chartjs-tooltip{
+
+} */
